@@ -1,34 +1,65 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Startup</title>
+<head>
+	<title>PRODUCT DETAILS</title>
+</head>
+<body background="background.jpg">
+	<FORM action="signup.php" method="post" enctype="multipart/form-data">
+		<TABLE cellpadding="10" cellspacing="10" align="center" bgcolor="white">
+			<tr>
+				<td colspan="3" align="center" bgcolor="yellow"><h1>SignUp</h1></td>
+			</tr>
+			<tr bgcolor="red">
+				<TD>
+					NAME
+				</TD>
+				<TD colspan="2">
+					<input type="text" name="name" placeholder="ENTER THE NAME">
+				</TD>
+			</TR>
+			<tr bgcolor="yellow">
+				<TD>
+					PRIMARY ADDRESS
+				</TD>
+				<TD colspan="2">
+					<TEXTAREA name="address">
+					</TEXTAREA>
+				</TD>
+			</TR>
+			<tr bgcolor="red">
+				<TD>
+					IMAGE
+				</TD>
+				<TD colspan="2">
+					<input type="file" name="image">
+				</TD>
+			</TR>
+			<tr bgcolor="yellow">
+				<TD>
+					ENTER USERNAME
+				</TD>
+				<TD colspan="2">
+					<input type="text" name="username">
+				</TD>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
-    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-    <!-- My own stylesheet -->
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="startup text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-12 my-auto">
-            <h1 class="text-uppercase faded">
-              <strong>the biggest startup event of the year</strong>
-            </h1>
-            <hr>
-          </div>
-          <div class="col-lg-12 my-auto">
-            <button class="btn btn-primary btn-xl">Find Out More</button>
-          </div>
-        </div>
-      </div>
-    </header>
-
-  </body>
-
+			</TR>
+			<tr bgcolor="red">
+				<TD>
+					ENTER PASSWORD
+				</TD>
+				<TD colspan="2">
+					<input type="password" name="pass" placeholder="********">
+				</TD>
+			</TR>
+			<tr bgcolor="yellow">
+				<TD colspan="3">
+					<input type="checkbox" name="terms">I hereby agree with the <a href="">TERMS AND CONDITIONS </a>
+				</TD>
+			</TR>
+			<tr>
+				<TD align="center" colspan="3">
+					<button type="reset">RESET </button><button type="submit"> SUBMIT</button>
+				</TD>
+			</TR>
+		</TABLE>
+	</FORM>
+</body>
 </html>
